@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Posture Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gym Posture Detection</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="/static/weightlifting.jpeg" alt="Weightlifting">
+            <h2>Weightlifting</h2>
+            <a href="{{ url_for('exercise', exercise_name='weightlifting') }}" class="btn">Start Exercise</a>
+        </div>
+
+        <div class="card">
+            <img src="/static/benchpress.jpeg" alt="Bench Press">
+            <h2>Bench Press</h2>
+            <a href="{{ url_for('exercise', exercise_name='benchpress') }}" class="btn">Start Exercise</a>
+        </div>
+
+        <div class="card">
+            <img src="/static/armcurl.jpeg" alt="Arm Curl">
+            <h2>Arm Curl</h2>
+            <a href="{{ url_for('exercise', exercise_name='armcurl') }}" class="btn">Start Exercise</a>
+        </div>
+
+        <div class="card">
+            <img src="/static/pushups.jpeg" alt="Push-ups">
+            <h2>Push-ups</h2>
+            <a href="{{ url_for('exercise', exercise_name='pushups') }}" class="btn">Start Exercise</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright © 2024 Gym Posture Detection</p>
+    </footer>
+</body>
+</html>
